@@ -45,12 +45,15 @@ function Protected({ children }) {
   if (!authReady) {
     return (
       <div className="route-loading">
-        <span className="loading-spinner" /> Checking administrator session…
+        <span className="loading-spinner" />
+        Checking administrator session…
       </div>
     );
   }
 
-  return user?.role === 'admin' ? children : <Navigate to="/login" replace />;
+  return user?.role === 'admin'
+    ? children
+    : <Navigate to="/login" replace />;
 }
 
 export default function App() {
