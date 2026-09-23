@@ -12,6 +12,7 @@ import {
   FileText,
   FlaskConical,
   Gauge,
+  Images,
   LibraryBig,
   MapPin,
   PlayCircle,
@@ -808,6 +809,95 @@ export default function Home() {
               <ArrowRight size={17} />
             </Link>
           </div>
+        </section>
+      </Reveal>
+
+      {/* =========================
+          FACILITIES
+          ========================= */}
+      <Reveal>
+        <section
+          className="container section"
+          style={{
+            paddingTop: '0',
+            paddingBottom: '56px',
+          }}
+        >
+          <Link
+            to="/facilities"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '24px',
+              padding: '28px 32px',
+              border: '1px solid #e2e8f0',
+              borderRadius: '12px',
+              background: '#fff',
+              textDecoration: 'none',
+              color: 'inherit',
+              boxShadow:
+                '0 8px 24px rgba(18,38,63,.06)',
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '18px',
+              }}
+            >
+              <div
+                style={{
+                  width: '52px',
+                  height: '52px',
+                  display: 'grid',
+                  placeItems: 'center',
+                  flexShrink: 0,
+                  borderRadius: '10px',
+                  background: '#f1f5f9',
+                  color: '#0056b3',
+                }}
+              >
+                <Images size={25} />
+              </div>
+
+              <div>
+                <span className="eyebrow">
+                  LIBRARY SPACES
+                </span>
+
+                <h2
+                  style={{
+                    margin: '5px 0 5px',
+                    fontSize: '1.35rem',
+                  }}
+                >
+                  Explore Library Facilities
+                </h2>
+
+                <p
+                  style={{
+                    margin: 0,
+                    color: '#555',
+                    fontSize: '0.92rem',
+                  }}
+                >
+                  View photos and information about
+                  the library's facilities and learning
+                  spaces.
+                </p>
+              </div>
+            </div>
+
+            <ArrowUpRight
+              size={24}
+              style={{
+                color: '#0056b3',
+                flexShrink: 0,
+              }}
+            />
+          </Link>
         </section>
       </Reveal>
     </div>
